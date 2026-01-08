@@ -80,12 +80,12 @@ The app is focused on **individual users**, not teams.
 personal-calender/
 ├── manage.py
 ├── .env
-├── backend/
+├── backend/                 
 │ ├── settings.py
 │ ├── urls.py
 │ ├── wsgi.py
 │ └── asgi.py
-├── events/
+├── events/                   
 │ ├── models.py
 │ ├── admin.py
 │ └── migrations/
@@ -202,8 +202,29 @@ From here you can:
 
 🟡 **In Progress**
 
-Core backend setup is complete.  
-Currently working on business logic and API layer.
+### Current Phase
+
+- Backend setup and configuration
+- Database integration with PostgreSQL
+- Core data models implemented
+
+## ✅ Step 2: Database & Data Models
+
+- PostgreSQL installed and configured
+- Django connected to PostgreSQL using environment variables
+- `Event` model implemented
+- Database migrations applied
+- CRUD operations verified using Django admin
+
+## ⏳ Step 3: Backend API (Planned)
+
+- Design REST API endpoints for event management
+- Implement authentication-protected routes
+- Restrict data access to event owners
+- Prepare backend for React frontend integration
+
+Frontend and API layers will be added in later phases.
+
 
 
 
