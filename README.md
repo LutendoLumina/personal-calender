@@ -216,7 +216,7 @@ From here you can:
 - Database migrations applied
 - CRUD operations verified using Django admin
 
-## ⏳ Step 3: Backend API (Planned)
+## ⏳ Step 3: Backend API
 
 - Design REST API endpoints for event management
 - Implement authentication-protected routes
@@ -224,6 +224,33 @@ From here you can:
 - Prepare backend for React frontend integration
 
 Frontend and API layers will be added in later phases.
+
+
+---
+
+## 🧪 API Testing
+
+All backend API endpoints have been tested using **Django REST Framework’s Browsable API** during development.
+
+The following scenarios were verified:
+
+- User authentication using Django session-based auth
+- Fetching events for the authenticated user (`GET /api/events/`)
+- Creating new events (`POST /api/events/`)
+- Updating existing events (`PUT /api/events/<id>/`)
+- Deleting events (`DELETE /api/events/<id>/`)
+- Input validation (end time must be after start time)
+- Event conflict detection (prevention of overlapping events)
+- Data isolation (users cannot view or modify other users’ events)
+
+Testing was performed while logged in to ensure permissions, ownership checks, and business logic behave correctly.
+
+### 🔍 Testing Tool Used
+
+- **Django REST Framework – Browsable API**
+
+This tool enabled interactive inspection of requests and responses directly in the browser without relying on external API clients.
+
 
 
 
